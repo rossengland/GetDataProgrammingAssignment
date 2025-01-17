@@ -43,7 +43,7 @@ Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass
 Hardware-Friendly Support Vector Machine. International Workshop of Ambient
 Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-##Preparing to use the analysis file, run_analysis.R
+## Preparing to use the analysis file, run_analysis.R
 To function properly, run_analysis.R must be run in R R 4.4.2+ on MacOS operating
 system (directory labels in the code are specific for file paths on a Mac system).
 The unzipped, unaltered "UCI HAR Dataset" folder
@@ -51,7 +51,7 @@ The unzipped, unaltered "UCI HAR Dataset" folder
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 must be present in the current working directory. 
 
-##Explanation of code procedures in the analysis file, run_analysis.R
+## Explanation of code procedures in the analysis file, run_analysis.R
 run_analysis.R contains code that will (1) merge the training and test data sets
 (along with subject and activity label sets) into a single data set; (2) extract
 a smaller data set consisting only of the mean (Mean) and standard deviation
