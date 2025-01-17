@@ -43,7 +43,65 @@ Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass
 Hardware-Friendly Support Vector Machine. International Workshop of Ambient
 Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
+##Preparing to use the analysis file, run_analysis.R
+To function properly, run_analysis.R must be run in R R 4.4.2+ on MacOS operating
+system (directory labels in the code are specific for file paths on a Mac system).
+The unzipped, unaltered "UCI HAR Dataset" folder
+(zip file available at  
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+must be present in the current working directory. 
+
+##Explanation of code procedures in the analysis file, run_analysis.R
+run_analysis.R contains code that will (1) merge the training and test data sets
+(along with subject and activity label sets) into a single data set; (2) extract
+a smaller data set consisting only of the mean (Mean) and standard deviation
+(Std) variables for each measurement type; (3) apply descriptive names to 
+numerically-coded activity labels; (4) apply descriptive labels to the variables
+(i.e., column names) using "tidy data" principles; and (5) create a separate dataset
+from the compiled data that contains a single mean value for each variable per 
+subject-activity. 
+
+run_analysis.R code procedures by line: 
 
 
+Lines 14 - 24: read the relevant space-sepaarated .txt files
+(X_test.txt, y_test.txt,subject_test.txt, X_train.txt, y_train.txt,
+subject_train.txt) into R using the read.table function (header = FALSE, as
+these data files do not directly contain variable names). The features.txt file
+is also read into an object, features, which contains the variable names for
+X_test and X_train. 
 
+Lines 26 - 39: merge the resulting data frames into a single data frame ('data'),
+consisting of 10,299 observations of 563 variables,
+and apply column names using "subject" for column 1, "activitylabel" for column 2,
+and the features object to name columns 3 - 563.
+
+Lines 41 - 44: utilize the the grep function to generate a vector (meanstd) of all
+all variables named with an instance of "mean()" or "std()" and subsets the 'data'
+object to a data frame consisting of only those variable (as well as columns 1-2
+of subject and activitylabel information). The resulting 'data' object consists of
+10,299 observations of 68 variables. 
+
+Lines 47 - 49: replace numeric activity label codes (1 - 6) contained in the
+'activitylabel' variable with corresponding descriptive activity labels (walking,
+walkingupstairs, walkingdownstairs, sitting, standing, laying). 
+
+Lines 51 - 56: utilize regular expressions and the gsub function to apply
+new descriptive names to each variable consistent with "tidy data" principles. 
+Among the changes include replacing "t" and "f" at the beginning of each variable
+name with the more descriptive "time" and "freq" (frequency), removing unncessary
+parentheses, and changing from hyphen separators to dot separators. 
+
+Lines 58 - 73: employ a "split-apply-combine" approach to split the data according
+to subject-activitylabel, apply a function to result the column means of the 
+measured variables (columns 3 - 68), and re-combine the results (using the rbind
+function) to generate (from the larger dataset 'data') a separate dataset,
+'tidydata', that contains a single mean value for each variable per subject-activity
+
+Lines 74-76: clean up the 'tidydata' object by reclassingit as a data frame, 
+removing unnecessary row names, and coercing the measured variable values
+back to numeric class objects (from character class objects).
+
+Line 78: utlizes the write.table function to generate a space-seaparated file
+of the 'tidydata' object in the working directory, tidydata.txt.
 
