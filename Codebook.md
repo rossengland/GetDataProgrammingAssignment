@@ -28,24 +28,24 @@ The original UCI HAR Dataset contained the means and standard deviations of mult
 | ------------------| ---------------------------------------------------------- |
 | subject           | subject identification number, integer ranging from 1 - 30  |
 | activitylabel     | descriptor of activity of subject at time of sensor readings  |
-| timeBodyAcc.Mean.X| mean body acceleration (derived in time), X directional vector  |
-| timeBodyAcc.Mean.Y   | mean body acceleration (derived in time), Y directional vector |
-| timeBodyAcc.Mean.Z   | mean body acceleration (derived in time), Z directional vector  |
-| timeBodyAcc.Std.X  | standard deviation of body acceleration (derived in time), X directional vector  |
-| timeBodyAcc.Std.Y   | standard deviation of body acceleration (derived in time), X directional vector  |
-| timeBodyAcc.Std.Z   | standard deviation of body acceleration (derived in time), X directional vector  |
-| timeGravityAcc.Mean.X   | Content Cell  |
-| timeGravityAcc.Mean.Y   | Content Cell  |
-| timeGravityAcc.Mean.Z   | Content Cell  |
-| timeGravityAcc.Std.X   | Content Cell  |
-| timeGravityAcc.Std.Y   | Content Cell  |
-| timeGravityAcc.Std.Z  | Content Cell  |
-| timeBodyAccJerk.Mean.X   | Content Cell  |
-| timeBodyAccJerk.Mean.Y  | Content Cell  |
-| timeBodyAccJerk.Mean.Z   | Content Cell  |
-| timeBodyAccJerk.Std.X   | Content Cell  |
-| timeBodyAccJerk.Std.Y  | Content Cell  |
-| timeBodyAccJerk.Std.Z   | Content Cell  |
+| timeBodyAcc.Mean.X| mean body acceleration, X directional vector  |
+| timeBodyAcc.Mean.Y   | mean body acceleration, Y directional vector |
+| timeBodyAcc.Mean.Z   | mean body acceleration, Z directional vector  |
+| timeBodyAcc.Std.X  | standard deviation of body acceleration, X directional vector  |
+| timeBodyAcc.Std.Y   | standard deviation of body acceleration, Y directional vector  |
+| timeBodyAcc.Std.Z   | standard deviation of body acceleration, Z directional vector  |
+| timeGravityAcc.Mean.X   | mean gravity acceleration, X directional vector  |
+| timeGravityAcc.Mean.Y   | mean gravity acceleration, Y directional vector  |
+| timeGravityAcc.Mean.Z   | mean gravity acceleration, Z directional vector  |
+| timeGravityAcc.Std.X   | standard deviation of gravity acceleration, X directional vector  |
+| timeGravityAcc.Std.Y   | standard deviation of gravity acceleration, Y directional vector |
+| timeGravityAcc.Std.Z  | standard deviation of gravity acceleration, Z directional vector  |
+| timeBodyAccJerk.Mean.X   | mean body acceleration jerk (derived in time), X directional vector  |
+| timeBodyAccJerk.Mean.Y  | mean body acceleration jerk (derived in time), Y directional vector  |
+| timeBodyAccJerk.Mean.Z   | mean body acceleration jerk (derived in time), Z directional vector  |
+| timeBodyAccJerk.Std.X   | standard deviation of body acceleration jerk (derived in time), X directional vector  |
+| timeBodyAccJerk.Std.Y  | standard deviation of body acceleration jerk (derived in time), Y directional vector  |
+| timeBodyAccJerk.Std.Z   | standard deviation of body acceleration jerk (derived in time), Z directional vector  |
 | timeBodyGyro.Mean.X   | Content Cell  |
 | timeBodyGyro.Mean.Y   | Content Cell  |
 | timeBodyGyro.Mean.Z   | Content Cell  |
