@@ -21,6 +21,9 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The original UCI HAR Dataset contained the means and standard deviations of multiple reads from each subject-activity combination. The tidydata.txt data set has been simplified to include the mean of these mean values(.Mean) and the mean of the standard deviation values (.Std) for each subject-activity combination. Thus each subject-activity combination occupies a single row/observation of the tidydata.txt data set.
 
+## Units of Variable Measures
+
+
 ## Table of Variable Names and Descriptions
 
 
@@ -41,56 +44,56 @@ The original UCI HAR Dataset contained the means and standard deviations of mult
 | timeGravityAcc.Std.Y   | standard deviation of gravity acceleration, Y axis|
 | timeGravityAcc.Std.Z  | standard deviation of gravity acceleration, Z axis  |
 | timeBodyAccJerk.Mean.X   | mean body acceleration jerk (derived in time), X axis  |
-| timeBodyAccJerk.Mean.Y  | mean body acceleration jerk (derived in time), Y axis  |
-| timeBodyAccJerk.Mean.Z   | mean body acceleration jerk (derived in time), Z axis  |
-| timeBodyAccJerk.Std.X   | standard deviation of body acceleration jerk (derived in time), X axis |
-| timeBodyAccJerk.Std.Y  | standard deviation of body acceleration jerk (derived in time), Y axis  |
-| timeBodyAccJerk.Std.Z   | standard deviation of body acceleration jerk (derived in time), Z axis  |
+| timeBodyAccJerk.Mean.Y  | mean body acceleration jerk, Y axis  |
+| timeBodyAccJerk.Mean.Z   | mean body acceleration jerk, Z axis  |
+| timeBodyAccJerk.Std.X   | standard deviation of body acceleration jerk, X axis |
+| timeBodyAccJerk.Std.Y  | standard deviation of body acceleration jerk, Y axis  |
+| timeBodyAccJerk.Std.Z   | standard deviation of body acceleration jerk, Z axis  |
 | timeBodyGyro.Mean.X   | mean body angular velocity, X axis |
 | timeBodyGyro.Mean.Y   | mean body angular velocity, Y axis  |
 | timeBodyGyro.Mean.Z   | mean body angular velocity, Z axis |
 | timeBodyGyro.Std.X   | standard deviation of body angular velocity, X  axis  |
 | timeBodyGyro.Std.Y   | standard deviation of body angular velocity, Y  axis  |
 | timeBodyGyro.Std.Z   | standard deviation of body angular velocity, Z  axis |
-| timeBodyGyroJerk.Mean.X  | Content Cell  |
-| timeBodyGyroJerk.Mean.Y   | Content Cell  |
-| timeBodyGyroJerk.Mean.Z   | Content Cell  |
-| timeBodyGyroJerk.Std.X   | Content Cell  |
-| timeBodyGyroJerk.Std.Y   | Content Cell  |
-| timeBodyGyroJerk.Std.Z   | Content Cell  |
-| timeBodyAccMag.Mean   | Content Cell  |
-| timeBodyAccMag.Std   | Content Cell  |
-| timeGravityAccMag.Mean   | Content Cell  |
-| timeGravityAccMag.Std   | Content Cell  |
-| timeBodyAccJerkMag.Mean   | Content Cell  |
-| timeBodyAccJerkMag.Std   | Content Cell  |
-| timeBodyGyroMag.Mean   | Content Cell  |
-| timeBodyGyroMag.Std   | Content Cell  |
-| timeBodyGyroJerkMag.Mean   | Content Cell  |
-| timeBodyGyroJerkMag.Std   | Content Cell  |
-| freqBodyAcc.Mean.X   | Content Cell  |
-| freqBodyAcc.Mean.Y   | Content Cell  |
-| freqBodyAcc.Mean.Z   | Content Cell  |
-| freqBodyAcc.Std.X   | Content Cell  |
-| freqBodyAcc.Std.Y   | Content Cell  |
-| freqBodyAcc.Std.Z   | Content Cell  |
-| freqBodyAccJerk.Mean.X   | Content Cell  |
-| freqBodyAccJerk.Mean.Y   | Content Cell  |
-| freqBodyAccJerk.Mean.Z   | Content Cell  |
-| freqBodyAccJerk.Std.X   | Content Cell  |
-| freqBodyAccJerk.Std.Y  | Content Cell  |
-| freqBodyAccJerk.Std.Z   | Content Cell  |
-| freqBodyGyro.Mean.X   | Content Cell  |
-| freqBodyGyro.Mean.Y   | Content Cell  |
-| freqBodyGyro.Mean.Z   | Content Cell  |
-| freqBodyGyro.Std.X   | Content Cell  |
-| freqBodyGyro.Std.Y   | Content Cell  |
-| freqBodyGyro.Std.Z   | Content Cell  |
-| freqBodyAccMag.Mean   | Content Cell  |
-| freqBodyAccMag.Std   | Content Cell  |
-| freqBodyBodyAccJerkMag.Mean   | Content Cell  |
-| freqBodyBodyAccJerkMag.Std  | Content Cell  |
-| freqBodyBodyGyroMag.Mean   | Content Cell  |
-| freqBodyBodyGyroMag.Std   | Content Cell  |
-| freqBodyBodyGyroJerkMag.Mean   | Content Cell  |
-| freqBodyBodyGyroJerkMag.Std   | Content Cell  |
+| timeBodyGyroJerk.Mean.X  | mean body angular velocity jerk, X axis  |
+| timeBodyGyroJerk.Mean.Y   | mean body angular velocity jerk, Y axis  |
+| timeBodyGyroJerk.Mean.Z   | mean body angular velocity jerk, Z axis  |
+| timeBodyGyroJerk.Std.X   | standard deviation of body angular velocity jerk, X axis  |
+| timeBodyGyroJerk.Std.Y   | standard deviation of body angular velocity jerk, X axis  |
+| timeBodyGyroJerk.Std.Z   | standard deviation of body angular velocity jerk, X axis  |
+| timeBodyAccMag.Mean   | mean body acceleration magnitude   |
+| timeBodyAccMag.Std   | standard deviation of body acceleration magnitude  |
+| timeGravityAccMag.Mean   | mean gravity acceleration magnitude  |
+| timeGravityAccMag.Std   | standard deviation of gravity acceleration magnitude  |
+| timeBodyAccJerkMag.Mean   | mean body acceleration jerk magnitude  |
+| timeBodyAccJerkMag.Std   | standard deviation of body acceleration jerk magnitude  |
+| timeBodyGyroMag.Mean   | mean body angular velocity magnitude |
+| timeBodyGyroMag.Std   | standard deviation of body angular velocity magnitude |
+| timeBodyGyroJerkMag.Mean   | mean body angular velocity jerk magnitude |
+| timeBodyGyroJerkMag.Std   | standard deviation of body angular velocity jerk magnitude  |
+| freqBodyAcc.Mean.X   | mean body acceleration frequency domain signal, X axis  |
+| freqBodyAcc.Mean.Y   | mean body acceleration frequency domain signal, Y axis  |
+| freqBodyAcc.Mean.Z   | mean body acceleration frequency domain signal, Z axis  |
+| freqBodyAcc.Std.X   | standard deviation of body acceleration frequency domain signal, X axis  |
+| freqBodyAcc.Std.Y   | standard deviation of body acceleration frequency domain signal, Y axis  |
+| freqBodyAcc.Std.Z   | standard deviation of body acceleration frequency domain signal, Z axis  |
+| freqBodyAccJerk.Mean.X   | mean body acceleration jerk frequency domain signal, X axis  |
+| freqBodyAccJerk.Mean.Y   | mean body acceleration jerk frequency domain signal, Y axis |
+| freqBodyAccJerk.Mean.Z   | mean body acceleration jerk frequency domain signal, Z axis  |
+| freqBodyAccJerk.Std.X   | standard deviation of body acceleration jerk frequency domain signal, X axis  |
+| freqBodyAccJerk.Std.Y  | standard deviation of body acceleration jerk frequency domain signal, Y axis  |
+| freqBodyAccJerk.Std.Z   | standard deviation of body acceleration jerk frequency domain signal, Z axis  |
+| freqBodyGyro.Mean.X   | mean body angular velocity frequency domain signal, X axis  |
+| freqBodyGyro.Mean.Y   | mean body angular velocity frequency domain signal, Y axis  |
+| freqBodyGyro.Mean.Z   | mean body angular velocity frequency domain signal, Z axis  |
+| freqBodyGyro.Std.X   | standard deviation of body angular velocity frequency domain signal, X axis  |
+| freqBodyGyro.Std.Y   | standard deviation of body angular velocity frequency domain signal, Y axis  |
+| freqBodyGyro.Std.Z   | standard deviation of body angular velocity frequency domain signal, Z axis  |
+| freqBodyAccMag.Mean   | mean body acceleration magnitude frequency domain signal  |
+| freqBodyAccMag.Std   | standard deviation of body accerleration magnitude frequency domain signal   |
+| freqBodyBodyAccJerkMag.Mean   | mean body  acceleration jerk magnitude frequency domain signal   |
+| freqBodyBodyAccJerkMag.Std  | standard deviation of body acceleration jerk magnitude frequency domain signal |
+| freqBodyBodyGyroMag.Mean   | mean body angular velocity magnitude frequency domain signal  |
+| freqBodyBodyGyroMag.Std   | standard deviation of body angular velocity magnitude frequency domain signal  |
+| freqBodyBodyGyroJerkMag.Mean   | mean body angular velocity jerk magnitude frequency domain signal |
+| freqBodyBodyGyroJerkMag.Std   | standard deviation of body angular velocity jerk magnitude frequency domain signal  |
