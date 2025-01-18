@@ -28,30 +28,30 @@ The original UCI HAR Dataset contained the means and standard deviations of mult
 | ------------------| ---------------------------------------------------------- |
 | subject           | subject identification number, integer ranging from 1 - 30  |
 | activitylabel     | descriptor of activity of subject at time of sensor readings  |
-| timeBodyAcc.Mean.X| mean body acceleration, X directional vector  |
-| timeBodyAcc.Mean.Y   | mean body acceleration, Y directional vector |
-| timeBodyAcc.Mean.Z   | mean body acceleration, Z directional vector  |
-| timeBodyAcc.Std.X  | standard deviation of body acceleration, X directional vector  |
-| timeBodyAcc.Std.Y   | standard deviation of body acceleration, Y directional vector  |
-| timeBodyAcc.Std.Z   | standard deviation of body acceleration, Z directional vector  |
-| timeGravityAcc.Mean.X   | mean gravity acceleration, X directional vector  |
-| timeGravityAcc.Mean.Y   | mean gravity acceleration, Y directional vector  |
-| timeGravityAcc.Mean.Z   | mean gravity acceleration, Z directional vector  |
-| timeGravityAcc.Std.X   | standard deviation of gravity acceleration, X directional vector  |
-| timeGravityAcc.Std.Y   | standard deviation of gravity acceleration, Y directional vector |
-| timeGravityAcc.Std.Z  | standard deviation of gravity acceleration, Z directional vector  |
-| timeBodyAccJerk.Mean.X   | mean body acceleration jerk (derived in time), X directional vector  |
-| timeBodyAccJerk.Mean.Y  | mean body acceleration jerk (derived in time), Y directional vector  |
-| timeBodyAccJerk.Mean.Z   | mean body acceleration jerk (derived in time), Z directional vector  |
-| timeBodyAccJerk.Std.X   | standard deviation of body acceleration jerk (derived in time), X directional vector  |
-| timeBodyAccJerk.Std.Y  | standard deviation of body acceleration jerk (derived in time), Y directional vector  |
-| timeBodyAccJerk.Std.Z   | standard deviation of body acceleration jerk (derived in time), Z directional vector  |
-| timeBodyGyro.Mean.X   | Content Cell  |
-| timeBodyGyro.Mean.Y   | Content Cell  |
-| timeBodyGyro.Mean.Z   | Content Cell  |
-| timeBodyGyro.Std.X   | Content Cell  |
-| timeBodyGyro.Std.Y   | Content Cell  |
-| timeBodyGyro.Std.Z   | Content Cell  |
+| timeBodyAcc.Mean.X| mean body acceleration, X directional axis  |
+| timeBodyAcc.Mean.Y   | mean body acceleration, Y directional axis |
+| timeBodyAcc.Mean.Z   | mean body acceleration, Z directional axis |
+| timeBodyAcc.Std.X  | standard deviation of body acceleration, X axis  |
+| timeBodyAcc.Std.Y   | standard deviation of body acceleration, Y axis  |
+| timeBodyAcc.Std.Z   | standard deviation of body acceleration, Z axis  |
+| timeGravityAcc.Mean.X   | mean gravity acceleration, X axis  |
+| timeGravityAcc.Mean.Y   | mean gravity acceleration, Y axis  |
+| timeGravityAcc.Mean.Z   | mean gravity acceleration, Z axis  |
+| timeGravityAcc.Std.X   | standard deviation of gravity acceleration, X axis |
+| timeGravityAcc.Std.Y   | standard deviation of gravity acceleration, Y axis|
+| timeGravityAcc.Std.Z  | standard deviation of gravity acceleration, Z axis  |
+| timeBodyAccJerk.Mean.X   | mean body acceleration jerk (derived in time), X axis  |
+| timeBodyAccJerk.Mean.Y  | mean body acceleration jerk (derived in time), Y axis  |
+| timeBodyAccJerk.Mean.Z   | mean body acceleration jerk (derived in time), Z axis  |
+| timeBodyAccJerk.Std.X   | standard deviation of body acceleration jerk (derived in time), X axis |
+| timeBodyAccJerk.Std.Y  | standard deviation of body acceleration jerk (derived in time), Y axis  |
+| timeBodyAccJerk.Std.Z   | standard deviation of body acceleration jerk (derived in time), Z axis  |
+| timeBodyGyro.Mean.X   | mean body angular velocity, X axis |
+| timeBodyGyro.Mean.Y   | mean body angular velocity, Y axis  |
+| timeBodyGyro.Mean.Z   | mean body angular velocity, Z axis |
+| timeBodyGyro.Std.X   | standard deviation of body angular velocity, X  axis  |
+| timeBodyGyro.Std.Y   | standard deviation of body angular velocity, Y  axis  |
+| timeBodyGyro.Std.Z   | standard deviation of body angular velocity, Z  axis |
 | timeBodyGyroJerk.Mean.X  | Content Cell  |
 | timeBodyGyroJerk.Mean.Y   | Content Cell  |
 | timeBodyGyroJerk.Mean.Z   | Content Cell  |
