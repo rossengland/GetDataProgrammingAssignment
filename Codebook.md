@@ -22,6 +22,17 @@ These signals were used to estimate variables of the feature vector for each pat
 The original UCI HAR Dataset contained the means and standard deviations of multiple reads from each subject-activity combination. The tidydata.txt data set has been simplified to include the mean of these mean values(.Mean) and the mean of the standard deviation values (.Std) for each subject-activity combination. Thus each subject-activity combination occupies a single row/observation of the tidydata.txt data set.
 
 ## Units of Variable Measures
+| Measurement Type | Units |
+| ---------------- | ------- |
+| acceleration | meters/second^2 (m/s^2) |
+| acceleration jerk | meters/second^3 (m/s^3) |
+| angular velocity | radians/second (rad/s) |
+| angular velocity jerk | radians/second^3 (rad/s^3) |
+| acceleration frequency domain signal| meters/second^2 per Hertz (m/s^2 per Hz) |
+| acceleration jerk frequency domain signal | meters/second^3 per Hertz (m/s^3 per Hz) |
+| angular velocity frequency domain signal | radians/second per Hertz (rad/s per Hz) |
+| angular velocity jerk frequency domain signal | radians/second^3 per Hertz (rad/s^3 per Hz) |
+
 
 
 ## Table of Variable Names and Descriptions
